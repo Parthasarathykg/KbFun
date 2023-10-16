@@ -1,12 +1,133 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-}
-
 .countdown {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    animation: fadeIn 2s;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+#timer {
+    font-size: 48px; 
+   font-weight: bold; 
+   margin: 10px 0; 
+color: #ff5722;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    animation: fadeIn 0.5s;
+    font-size: 14px; 
+}
+
+.message.thinking.users{
+    align-self: flex-end;
+}
+
+.message.thinking.friends{
+    align-self: flex-start;
+}
+
+
+.sender {
+    font-weight: bold;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #2196F3;
+    border-radius: 10px 10px 0 10px;
+}
+
+.friend {
+    align-self: flex-start;
+    /* background-color: #4CAF50; */
+    background: #333;
+    border-radius: 10px 10px 10px 0;
+}
+
+.message .text {
+    margin: 5px 0;
+}
+
+/* Your existing CSS styles ... */
+
+.thinking-dots {
+    font-size: 34px;
+    color: #999; 
+    animation: thinkingAnimation 2s infinite;
+}
+.message .thinking-dots {
+    display: inline-block; /* Keep the dots inline with text */
+}
+
+@keyframes thinkingAnimation {
+    0%, 100% {
+        content: '...';
+        
+    }
+    25% {
+        content: '.   ';
+    }
+    50% {
+        content: '..  ';
+    }
+    75% {
+        content: '... ';
+    }
+}
+
+/* Countdown styles as desired */
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes countdownFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
