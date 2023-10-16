@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-const birthday = new Date("YYYY-MM-DDT00:00:00");
+const birthday = new Date("2023-10-23T01:26:10");
 
 function updateCountdown() {
     const now = new Date();
@@ -68,6 +68,7 @@ function addMessageWithDelayAndThinking(message, index) {
 conversation.forEach((message, index) => {
     addMessageWithDelayAndThinking(message, index);
 });
+
 
 
 
