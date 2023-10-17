@@ -87,7 +87,7 @@ function addMessageWithDelayAndThinking(message, index) {
             chatContainer.scrollTop = chatContainer.scrollHeight;
             window.scrollBy(0,50);
         }, 1000); // 2-second delay before the message
-    }, (index * 1000) + 1000); // 2-second delay for the thinking bubble
+    }, (index * 2000) + 1000); // 2-second delay for the thinking bubble
 }
 
 // Iterate through conversation and add messages with "thinking" bubbles
@@ -99,7 +99,7 @@ conversation.forEach((message, index) => {
 
 setTimeout(() => {
     countdown.style.display = "block";
-    window.scrollBy(0,50);
+    window.scrollBy(0,256);
 }, 25000);
 
 
