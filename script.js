@@ -100,8 +100,8 @@ conversation.forEach((message, index) => {
 
 setTimeout(() => {
     countdown.style.display = "block";
-    window.scrollBy(0,256);
-}, 26000);
+    window.scrollBy(0,512);
+}, 27000);
 
 
 
