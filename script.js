@@ -49,7 +49,7 @@ updateCountdown();
 // Simulated conversation data in JavaScript
 const conversation = [
     { sender: "Prabha", text: "Hi Partha!" },
-    { sender: "Partha", text: "Sollunga Prabha! 🥳" },
+    { sender: "Partha", text: "Sollunga Prabha.." },
     { sender: "Prabha", text: "Kannabhiran 30th bday ku Edhachu special ah pannanum Partha!" },
     { sender: "Partha", text: "Pannirlam Prabha.. Fun iruku.. Wait" },
     { sender: "Rukumani", text: "I hope he's ready for the big 3-0! 😄" },
@@ -59,8 +59,8 @@ const conversation = [
     { sender: "Thamim", text: "Emi ekkada osthawa 😄" },
     { sender: "Kirthik", text: "Vera level 👍👍" },
     { sender: "Rashmi", text: "Haha 🎈" },
-    { sender: "Prabha", text: "Get ready to say goodbye to your 20s, Kannabhiran! 😜" },
-    { sender: "Partha", text: "Countdown start pannirlam.." }
+    { sender: "Prabha", text: "Get ready to say goodbye to your 20s, Kannabhiran! nu countdown start panniru😜" },
+    { sender: "Partha", text: "Ok Prabha!, Countdown start pannirlam.." }
 ];
 
 const chatContainer = document.querySelector(".chat");
