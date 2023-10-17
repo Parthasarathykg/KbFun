@@ -51,12 +51,13 @@ const conversation = [
     { sender: "Prabha", text: "Hi Partha!" },
     { sender: "Partha", text: "Sollunga Prabha.." },
     { sender: "Prabha", text: "Kannabhiran 30th bday ku Edhachu special ah pannanum Partha!" },
-    { sender: "Partha", text: "Pannirlam Prabha.. Fun iruku.. Wait" },
-    { sender: "Rukumani", text: "I hope he's ready for the big 3-0! 😄" },
-    { sender: "Harish", text: "Dei Kunafa Kannaku fun ah pannanum 😄" },
+    { sender: "Partha", text: "Pannirlam Prabha.. Fun iruku.. Wait.." },
+    { sender: "Rukumani", text: "I hope he's ready for the big 3-0!" },
+    { sender: "Harish", text: "Dei Kunafa Kannaku fun ah edhachu pannanum 😈" },
+    { sender: "RK", text: "Namma annanuku dhane pannirlam" },
     { sender: "Fewin", text: "😄" },
     { sender: "Divya", text: "🤣😂" },
-    { sender: "Thamim", text: "Emi ekkada osthawa 😄" },
+    { sender: "Thamim", text: "Jinx pannirlam bro.. bday annaki edhachu 💀" },
     { sender: "Kirthik", text: "Vera level 👍👍" },
     { sender: "Rashmi", text: "Haha 🎈" },
     { sender: "Prabha", text: "Get ready to say goodbye to your 20s, Kannabhiran! nu countdown start panniru😜" },
@@ -85,7 +86,7 @@ function addMessageWithDelayAndThinking(message, index) {
 
             // Scroll to the bottom of the chat container
             chatContainer.scrollTop = chatContainer.scrollHeight;
-            window.scrollBy(0,50);
+            window.scrollBy(0,70);
         }, 1000); // 2-second delay before the message
     }, (index * 2000) + 1000); // 2-second delay for the thinking bubble
 }
