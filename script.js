@@ -53,7 +53,7 @@ const conversation = [
     { sender: "Prabha", text: "Kannabhiran 30th bday ku Edhachu special ah pannanum Partha!" },
     { sender: "Partha", text: "Pannirlam Prabha.. Fun iruku.. Wait" },
     { sender: "Rukumani", text: "I hope he's ready for the big 3-0! 😄" },
-    { sender: "Harish", text: "Dei Boomer Kannaku fun ah pannanum 😄" },
+    { sender: "Harish", text: "Dei Kunafa Kannaku fun ah pannanum 😄" },
     { sender: "Fewin", text: "😄" },
     { sender: "Divya", text: "🤣😂" },
     { sender: "Thamim", text: "Emi ekkada osthawa 😄" },
@@ -100,7 +100,7 @@ conversation.forEach((message, index) => {
 setTimeout(() => {
     countdown.style.display = "block";
     window.scrollBy(0,256);
-}, 25000);
+}, 26000);
 
 
 
