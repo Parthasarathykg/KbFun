@@ -144,6 +144,6 @@ body {
   
   /* Apply the animation to the image element */
   .image-rotation {
-    animation: rotateImage 2s linear; /* 2 seconds duration */
+    animation: rotateImage 10s linear; /* 2 seconds duration */
   }
   
