@@ -85,8 +85,8 @@ function addMessageWithDelayAndThinking(message, index) {
 
             // Scroll to the bottom of the chat container
             chatContainer.scrollTop = chatContainer.scrollHeight;
-        }, 1000); // 2-second delay before the message
-    }, (index * 4000) + 1000); // 2-second delay for the thinking bubble
+        }, 500); // 2-second delay before the message
+    }, (index * 4000) + 500); // 2-second delay for the thinking bubble
 }
 
 // Iterate through conversation and add messages with "thinking" bubbles
