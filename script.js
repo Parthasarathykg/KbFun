@@ -91,7 +91,7 @@ conversation.forEach((message, index) => {
 
 setTimeout(() => {
     countdown.style.display = "block";
-}, 20000);
+}, 25000);
 
 
 
