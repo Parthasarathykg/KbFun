@@ -1,3 +1,21 @@
+const countdown = document.getElementsByClassName("countdown")[0];
+countdown.style.display = "none";
+
+// Function to show the countdown and hide the chat
+function showCountdownAndHideChat() {
+    // Hide the chat
+    chatContainer.style.display = "none";
+
+    // Show the countdown
+    countdown.style.display = "block";
+
+    // Set a timeout to hide the countdown after a specified time (e.g., 5 seconds)
+    setTimeout(function() {
+        countdown.style.display = "none";
+    }, 5000); // 5000 milliseconds (5 seconds)
+}
+
+
 // Set the date we're counting down to
 const birthday = new Date("2023-10-23T01:26:10");
 
@@ -60,16 +78,20 @@ function addMessageWithDelayAndThinking(message, index) {
 
             // Scroll to the bottom of the chat container
             chatContainer.scrollTop = chatContainer.scrollHeight;
-        }, 2000); // 2-second delay before the message
-    }, (index * 4000) + 2000); // 2-second delay for the thinking bubble
+        }, 1000); // 2-second delay before the message
+    }, (index * 4000) + 1000); // 2-second delay for the thinking bubble
 }
 
 // Iterate through conversation and add messages with "thinking" bubbles
 conversation.forEach((message, index) => {
     addMessageWithDelayAndThinking(message, index);
+    console.log(index)
 });
 
 
+setTimeout(() => {
+    countdown.style.display = "block";
+}, 20000);
 
 
 
