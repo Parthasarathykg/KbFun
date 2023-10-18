@@ -96,8 +96,8 @@ conversation.forEach((message, index) => {
     addMessageWithDelayAndThinking(message, index);
     console.log(index)
 });
-
-
+//Added temporarily
+countdown.style.display = "block";
 setTimeout(() => {
     countdown.style.display = "block";
     window.scrollBy(0,512);
